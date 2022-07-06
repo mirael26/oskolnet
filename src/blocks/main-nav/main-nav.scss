@@ -1,0 +1,9 @@
+.main-nav {
+  display: flex;
+  gap: 26px;
+}
+
+.main-nav__link {
+  @include nav-text;
+  
+}

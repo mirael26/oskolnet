@@ -1,0 +1,47 @@
+.phone {
+  display: flex;
+}
+
+.phone__icon {
+  margin-right: 10px;
+
+  .phone--dark & {
+    fill: $denim;
+  }
+}
+
+.phone__text-block {
+  display: flex;
+
+  .phone--column & {
+    flex-direction: column;
+  }
+}
+
+.phone__numbers {
+  margin-top: -2px;
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+
+  .phone--dark & {
+    color: $denim;
+  }
+}
+
+.phone__text {
+  margin-top: -6px;
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.28em;
+  opacity: 0.5;
+
+  .phone--dark & {
+    color: $denim;
+  }
+}
