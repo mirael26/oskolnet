@@ -1,5 +1,9 @@
 .phone {
   display: flex;
+
+  &--row {
+    align-items: center;
+  }
 }
 
 .phone__icon {
@@ -8,13 +12,22 @@
   .phone--dark & {
     fill: $denim;
   }
+
+  .phone--white & {
+    fill: white;
+  }
 }
 
 .phone__text-block {
   display: flex;
+  align-items: center;
 
   .phone--column & {
     flex-direction: column;
+  }
+
+  .phone--row & {
+    flex-direction: row;
   }
 }
 
@@ -26,8 +39,17 @@
   font-size: 17px;
   line-height: 25px;
 
+  .phone--row & {
+    margin-top: 4px;
+    margin-right: 13px;
+  }
+
   .phone--dark & {
     color: $denim;
+  }
+
+  .phone--white & {
+    color: white;
   }
 }
 
@@ -41,7 +63,17 @@
   letter-spacing: 0.28em;
   opacity: 0.5;
 
+  .phone--row & {
+    margin-top: 1px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
+
   .phone--dark & {
     color: $denim;
+  }
+
+  .phone--white & {
+    color: white;
   }
 }

@@ -13,4 +13,10 @@
     color: white;
     background-color: $denim;
   }
+
+  &--white {
+    color: $denim;
+    background-color: white;
+    border: none;
+  }
 }
