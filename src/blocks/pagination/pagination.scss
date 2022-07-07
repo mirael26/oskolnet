@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+.pagination__item {
+  width: 9px;
+  height: 9px;
+  font-size: 0;
+  border-radius: 10px;
+  background-color: $denim;
+  opacity: 0.2;
+
+  &.active {
+    width: 28px;
+    background-color: $blue;
+    opacity: 1;
+  }
+}
