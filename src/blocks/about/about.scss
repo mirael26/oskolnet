@@ -1,0 +1,42 @@
+.about {
+  padding: 64px 0;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__title {
+  @include h2;
+  margin-bottom: 37px;
+}
+
+.about__block {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 58px;
+}
+
+.about__image {
+  width: 41%;
+  border-radius: 10px;
+}
+
+.about__text-block {
+  width: 45%;
+}
+
+.about__text {
+  @include text;
+
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+.about__button {
+  padding: 11px 35px;
+}
