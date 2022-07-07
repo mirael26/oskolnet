@@ -4,7 +4,7 @@
   gap: 13px;
 }
 
-.pagination__item {
+.pagination__button {
   width: 9px;
   height: 9px;
   font-size: 0;
@@ -13,8 +13,11 @@
   opacity: 0.2;
 
   &.active {
-    width: 28px;
     background-color: $blue;
     opacity: 1;
+  }
+
+  .pagination--stretched &.active {
+    width: 28px;
   }
 }
