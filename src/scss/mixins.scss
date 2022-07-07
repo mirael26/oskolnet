@@ -4,6 +4,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
+  text-transform: uppercase;
   color: $denim;
 }
 
@@ -26,11 +27,7 @@
 }
 
 @mixin button-text {
-  font-family: 'Circe', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
+  @include text;
 }
 
 @mixin text {

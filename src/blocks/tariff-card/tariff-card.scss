@@ -1,0 +1,123 @@
+.tariff-card {
+  padding: 57px 19px 37px;
+
+  &--hit {
+    position: relative;
+    background: linear-gradient(180deg, #273158 0%, #0C244D 100%);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 30px;
+
+    &::after {
+      @include text;
+      position: absolute;
+      content: 'хит';
+      top: 23px;
+      left: 18px;
+      padding: 3px 10px 2px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: $denim;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+}
+
+.tariff-card__title {
+  @include h3;
+  margin-bottom: 2px;
+  font-size: 30px;
+  line-height: 44px;
+  color: $denim;
+
+  .tariff-card--hit & {
+    color: white;
+  }
+}
+
+.tariff-card__speed {
+  @include h3;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 34px;
+  font-size: 24px;
+  line-height: 35px;
+  color: $denim;
+  
+  .tariff-card--hit & {
+    color: white;
+  }
+  
+  &::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    background: url('../../img/speed-icon.svg') no-repeat;
+  }
+}
+
+.tariff-card__details-button {
+  @include button-text;
+  position: relative;
+  margin-bottom: 15px;
+  padding-right: 19px;
+
+  .tariff-card--hit & {
+    color: white;
+
+    &::after {
+      background-color: white;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    mask-image: url('../../img/popup-icon.svg');
+    -webkit-mask-image: url('../../img/popup-icon.svg');
+    background-color: $denim;
+  }
+}
+
+.tariff-card__separator {
+  height: 1px;
+  margin: 0 0 10px;
+  color: $denim;
+  background-color: $denim;
+  opacity: 0.2;
+  border: none;
+
+  .tariff-card--hit & {
+    color: $blue;
+    background-color: $blue;
+    opacity: 1;
+  }
+}
+
+.tariff-card__price {
+  @include text;
+  margin-bottom: 9px;
+
+  &--number {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .tariff-card--hit & {
+    color: white;
+  }
+}
+
+.tariff-card__button {
+  width: 100%;
+}

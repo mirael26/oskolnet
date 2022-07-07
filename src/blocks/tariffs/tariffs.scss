@@ -1,0 +1,168 @@
+.tariffs {
+  padding: 51px 0 52px;
+}
+
+.tariffs__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tariffs__title {
+  @include h2;
+  margin-bottom: 25px;
+}
+
+.tariffs__table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 47px;
+  padding: 51px 40px 23px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 64px 194px rgba(0, 0, 0, 0.1);
+}
+
+.tariffs__tabs {
+  display: flex;
+  gap: 51px;
+  margin-bottom: 50px;
+}
+
+.tariffs__tab {
+  @include text;
+  font-size: 20px;
+  line-height: 140%;
+
+  &.active {
+    font-weight: 700;
+    border-bottom: 2px solid $blue;
+  }
+
+  &--hit {
+    position: relative;
+    padding-right: 60px;
+
+    &::after {
+      @include text;
+      position: absolute;
+      content: 'хит';
+      top: 0;
+      right: 0;
+      padding: 3px 10px 2px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: white;
+      background-color: $blue;
+      border-radius: 10px;
+    }
+  }
+}
+
+.tariffs__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.tariffs__pagination {
+  margin-bottom: 36px;
+}
+
+.tariffs__table-button {
+  padding: 10px 86px;
+}
+
+.tariffs__asides {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.tariffs__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 200px;
+  padding: 10px 59px 10px 78px;
+  background: linear-gradient(92.37deg, #263057 29.38%, #1D1444 100.81%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.tariffs__aside-title {
+  @include h3;
+}
+
+.tariffs__form {
+  margin-top: 15px;
+}
+
+.tariffs__form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+
+  &--with-icon {
+    position: relative;
+    margin-left: 75px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -5px;
+      left: -75px;
+      width: 54px;
+      height: 54px;
+      background: url('../../img/map-point-icon.svg') no-repeat; 
+    }
+  }
+  
+}
+
+.tariffs__input {
+  min-height: 46px;
+  padding: 10px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+
+  &--grow {
+    flex-grow: 1;
+  }
+
+  &::placeholder {
+    @include text;
+  }
+}
+
+.tariffs__aside-button {
+  padding: 11px 65px;
+}
+
+.tariffs__checkbox-label {
+  @include text;
+  display: inline-block;
+  position: relative;
+  margin-top: 18px;
+  padding-left: 29px;
+  font-size: 18px;
+  color: white;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #FFFFFF;
+    border-radius: 1px;
+  }
+}
